@@ -1,0 +1,6 @@
+@Creditas.CreditSimulator_HostAddress = http://localhost:5101
+
+GET {{Creditas.CreditSimulator_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

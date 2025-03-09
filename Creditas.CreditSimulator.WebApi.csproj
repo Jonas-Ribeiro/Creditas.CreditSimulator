@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Creditas.CreditSimulator.Application\**" />
+    <Compile Remove="Creditas.CreditSimulator.Domain\**" />
+    <Compile Remove="Creditas.CreditSimulator.Infrastructure\**" />
+    <Content Remove="Creditas.CreditSimulator.Application\**" />
+    <Content Remove="Creditas.CreditSimulator.Domain\**" />
+    <Content Remove="Creditas.CreditSimulator.Infrastructure\**" />
+    <EmbeddedResource Remove="Creditas.CreditSimulator.Application\**" />
+    <EmbeddedResource Remove="Creditas.CreditSimulator.Domain\**" />
+    <EmbeddedResource Remove="Creditas.CreditSimulator.Infrastructure\**" />
+    <None Remove="Creditas.CreditSimulator.Application\**" />
+    <None Remove="Creditas.CreditSimulator.Domain\**" />
+    <None Remove="Creditas.CreditSimulator.Infrastructure\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="Creditas.CreditSimulator.Application\Creditas.CreditSimulator.Application.csproj" />
+    <ProjectReference Include="Creditas.CreditSimulator.Domain\Creditas.CreditSimulator.Domain.csproj" />
+    <ProjectReference Include="Creditas.CreditSimulator.Infrastructure\Creditas.CreditSimulator.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

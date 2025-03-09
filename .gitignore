@@ -1,0 +1,18 @@
+.vs/
+
+# Ignore arquivos e pastas temporárias do Visual Studio
+.vs/
+*.user
+*.suo
+
+# Ignore arquivos gerados pelo build
+bin/
+obj/
+
+# Ignore pacotes NuGet restaurados
+packages/
+*.nupkg
+
+# Ignore arquivos de log e temporários
+*.log
+*.tmp

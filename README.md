@@ -1,0 +1,2 @@
+# Creditas.CreditSimulator
+ Case Creditas
