@@ -22,6 +22,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creditas.CreditSimulator.Ap
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{7F488019-183D-49B7-A311-C150A65FE611}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creditas.CreditSimulator.Infrastructure.UnitTest", "TestArea\UnitTest\Creditas.CreditSimulator.Infrastructure.UnitTest\Creditas.CreditSimulator.Infrastructure.UnitTest.csproj", "{3E48362C-9442-456D-B4A5-A8F964F6BF00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +50,10 @@ Global
 		{55F8BA4B-7A13-47C7-A65C-86ECD2FF403D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55F8BA4B-7A13-47C7-A65C-86ECD2FF403D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55F8BA4B-7A13-47C7-A65C-86ECD2FF403D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E48362C-9442-456D-B4A5-A8F964F6BF00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E48362C-9442-456D-B4A5-A8F964F6BF00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E48362C-9442-456D-B4A5-A8F964F6BF00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E48362C-9442-456D-B4A5-A8F964F6BF00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,5 +61,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{55F8BA4B-7A13-47C7-A65C-86ECD2FF403D} = {7F488019-183D-49B7-A311-C150A65FE611}
 		{7F488019-183D-49B7-A311-C150A65FE611} = {BFAF256D-A518-46CF-9346-C87A2AFC4877}
+		{3E48362C-9442-456D-B4A5-A8F964F6BF00} = {7F488019-183D-49B7-A311-C150A65FE611}
 	EndGlobalSection
 EndGlobal

@@ -1,8 +1,6 @@
-using System;
 using Creditas.CreditSimulator.Infrastructure.Services;
-using Xunit;
 
-namespace Creditas.CreditSimulator.Infrastructure.UnitTest
+namespace Creditas.CreditSimulator.Infrastructure
 {
     public class FeeServiceUnitTest
     {
