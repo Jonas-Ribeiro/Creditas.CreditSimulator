@@ -30,6 +30,8 @@ namespace Creditas.CreditSimulator.Application.Services
                 SimulationResponse simulationResponse = _mapper.Map<SimulationResponse>(creditSimulationResult);
                 simulationResponse.Success = true;
 
+                _logger.LogInformation("Simulation finished with success - id {ex.message}", simulationResponse.Id);
+
                 return Task.FromResult(simulationResponse);
             }
             catch (Exception ex)
