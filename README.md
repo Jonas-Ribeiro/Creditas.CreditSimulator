@@ -51,7 +51,17 @@ Após preencher as propriedades, clique em *Execute* e logo você terá o result
 
 **id**: Id de controle
 
+## Sobre o desenvolvimento
 
+-  Utilizei o design pattern DDD direcionando o desenvolvimento para os domínios do projeto
+-  Está divido em quatro camadas, são elas: WebApi, Application, Domain e Infrastructure
+-  *WebApi*: Camada de start da aplicação, por ela que chegam os request via Controllers
+-  *Application*: Camada responsável por manipular e/ou tratar os objetos do escopo, além de validar a simulação
+-  *Domain*: Dominios da aplicação utilizados nas outras camadas
+-  *Infrastructure*: Implementação dos serviços
+-  As funções e classe estão focadas em um e somente um propósito
+-  Utilizei as Interfaces para trabalhar com os serviços, deixando a classe concreta somente com a implementação.
+-  O código está escalável
 
 
 
