@@ -10,15 +10,19 @@
     <Compile Remove="Creditas.CreditSimulator.Application\**" />
     <Compile Remove="Creditas.CreditSimulator.Domain\**" />
     <Compile Remove="Creditas.CreditSimulator.Infrastructure\**" />
+    <Compile Remove="TestArea\**" />
     <Content Remove="Creditas.CreditSimulator.Application\**" />
     <Content Remove="Creditas.CreditSimulator.Domain\**" />
     <Content Remove="Creditas.CreditSimulator.Infrastructure\**" />
+    <Content Remove="TestArea\**" />
     <EmbeddedResource Remove="Creditas.CreditSimulator.Application\**" />
     <EmbeddedResource Remove="Creditas.CreditSimulator.Domain\**" />
     <EmbeddedResource Remove="Creditas.CreditSimulator.Infrastructure\**" />
+    <EmbeddedResource Remove="TestArea\**" />
     <None Remove="Creditas.CreditSimulator.Application\**" />
     <None Remove="Creditas.CreditSimulator.Domain\**" />
     <None Remove="Creditas.CreditSimulator.Infrastructure\**" />
+    <None Remove="TestArea\**" />
   </ItemGroup>
 
   <ItemGroup>

@@ -11,11 +11,14 @@ namespace Creditas.CreditSimulator.Domain.Entities
         public readonly double TotalAmount;
         public readonly double MonthlyPayment;
         public readonly double TotalFee;
-        public CreditSimulationResult(double totalAmount, double monthlyPayment, double totalFee)
+        public readonly Guid Id;
+
+        public CreditSimulationResult(double totalAmount, double monthlyPayment, double totalFee, Guid id = default)
         {
             TotalAmount = totalAmount;
             MonthlyPayment = monthlyPayment;
             TotalFee = totalFee;
+            Id = id == default ? Guid.NewGuid() : id;
         }
     }
 }

@@ -12,5 +12,6 @@ namespace Creditas.CreditSimulator.Domain.Responses
         public double MonthlyPayment { get; set; }
         public double TotalFee { get; set; }
         public bool Success { get; set; }
+        public Guid Id { get; set; }
     }
 }

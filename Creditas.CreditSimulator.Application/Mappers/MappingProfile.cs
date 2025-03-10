@@ -15,7 +15,7 @@ namespace Creditas.CreditSimulator.Application.Mappers
         public MappingProfile()
         {
             CreateMap<SimulationRequest, User>();
-
+ 
             CreateMap<CreditSimulationResult, SimulationResponse>()
                 .ForMember(dest => dest.MonthlyPayment, 
                 opt => opt.MapFrom(src => Math.Round(src.MonthlyPayment, 2)))

@@ -11,6 +11,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creditas.CreditSimulator.Do
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creditas.CreditSimulator.Infrastructure", "Creditas.CreditSimulator.Infrastructure\Creditas.CreditSimulator.Infrastructure.csproj", "{B35E0B86-EA5A-4FBA-9E49-B810E3D5CC30}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3DF7F90B-78DF-4BEC-A5E7-AE3C35BD2EBE}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestArea", "TestArea", "{BFAF256D-A518-46CF-9346-C87A2AFC4877}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creditas.CreditSimulator.Application.UnitTest", "TestArea\UnitTest\Creditas.CreditSimulator.Application.UnitTest\Creditas.CreditSimulator.Application.UnitTest.csproj", "{55F8BA4B-7A13-47C7-A65C-86ECD2FF403D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{7F488019-183D-49B7-A311-C150A65FE611}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,8 +44,16 @@ Global
 		{B35E0B86-EA5A-4FBA-9E49-B810E3D5CC30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B35E0B86-EA5A-4FBA-9E49-B810E3D5CC30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B35E0B86-EA5A-4FBA-9E49-B810E3D5CC30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55F8BA4B-7A13-47C7-A65C-86ECD2FF403D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55F8BA4B-7A13-47C7-A65C-86ECD2FF403D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55F8BA4B-7A13-47C7-A65C-86ECD2FF403D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55F8BA4B-7A13-47C7-A65C-86ECD2FF403D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{55F8BA4B-7A13-47C7-A65C-86ECD2FF403D} = {7F488019-183D-49B7-A311-C150A65FE611}
+		{7F488019-183D-49B7-A311-C150A65FE611} = {BFAF256D-A518-46CF-9346-C87A2AFC4877}
 	EndGlobalSection
 EndGlobal

@@ -5,7 +5,7 @@ using Creditas.CreditSimulator.Domain.Requests;
 using Creditas.CreditSimulator.Domain.Responses;
 using Microsoft.Extensions.Logging;
 
-namespace Creditas.CreditSimulator.Application
+namespace Creditas.CreditSimulator.Application.Services
 {
     public class SimulatorService : ISimulatorService
     {
@@ -36,7 +36,7 @@ namespace Creditas.CreditSimulator.Application
             {
                 _logger.LogError("Error during credit simulation: {ex.message}", ex.Message);
 
-                return Task.FromResult(new SimulationResponse { Success = false});
+                return Task.FromResult(new SimulationResponse { Success = false });
             }
         }
     }
