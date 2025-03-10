@@ -1,4 +1,5 @@
 using Creditas.CreditSimulator.Infrastructure.Services;
+using Creditas.CreditSimulator.Infrastructure.Services.Constants;
 
 namespace Creditas.CreditSimulator.Infrastructure
 {
@@ -12,10 +13,10 @@ namespace Creditas.CreditSimulator.Infrastructure
         }
 
         [Theory]
-        [InlineData("2000-01-01", 5.0 / 100 / 12)] // Age <= 25
-        [InlineData("1990-01-01", 3.0 / 100 / 12)] // 26 <= Age < 40
-        [InlineData("1975-01-01", 2.0 / 100 / 12)] // 41 <= Age < 60
-        [InlineData("1950-01-01", 4.0 / 100 / 12)] // Age > 60
+        [InlineData("2000-01-01", 5.0 / 100 / ServiceConstants.MONTHS_IN_YEAR)] // Age <= 25
+        [InlineData("1990-01-01", 3.0 / 100 / ServiceConstants.MONTHS_IN_YEAR)] // 26 <= Age < 40
+        [InlineData("1975-01-01", 2.0 / 100 / ServiceConstants.MONTHS_IN_YEAR)] // 41 <= Age < 60
+        [InlineData("1950-01-01", 4.0 / 100 / ServiceConstants.MONTHS_IN_YEAR)] // Age > 60
         public void GetMonthFee_ShouldReturnCorrectFeeBasedOnAge(string birthDateString, double expectedFee)
         {
             // Arrange
